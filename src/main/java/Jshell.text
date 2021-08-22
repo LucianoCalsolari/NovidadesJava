@@ -1,0 +1,8 @@
+Jshel é um  REPL (Read-Eval-Print-Loop).
+
+Que é um terminal interativa que auxilia na execução
+do código java.
+
+A partir do Java 9.
+Pode ser consultado na documentação
+https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm#JSHEL-GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8
