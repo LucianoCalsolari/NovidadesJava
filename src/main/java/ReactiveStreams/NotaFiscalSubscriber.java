@@ -14,17 +14,19 @@ public class NotaFiscalSubscriber implements Subscriber<NotaFiscal>{
     }
 
     @Override
-    public void onNext(NotaFiscal item) {
-
+    public void onNext(NotaFiscal notaFiscal) {
+        NotaFiscalWSClient nfwsc = new NotaFiscalWSClient();
+        nfwsc.enviar(notaFiscal);
+        this.subscription.request(1);
     }
 
     @Override
     public void onError(Throwable throwable) {
-
+        throwable.printStackTrace();
     }
 
     @Override
     public void onComplete() {
-
+        System.out.println("Todas as notas foram emitidas");
     }
 }
